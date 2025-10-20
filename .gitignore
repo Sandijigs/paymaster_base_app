@@ -1,0 +1,53 @@
+# Root level ignores
+.DS_Store
+.qodo/
+
+# ========================================
+# Frontend (frontend_paymaster)
+# ========================================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and build outputs
+frontend_paymaster/node_modules
+frontend_paymaster/dist
+frontend_paymaster/dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========================================
+# Smart Contract (rewardContract)
+# ========================================
+
+# Compiler files
+rewardContract/cache/
+rewardContract/out/
+
+# Ignores development broadcast logs
+!/broadcast
+rewardContract/broadcast/*/31337/
+rewardContract/broadcast/**/dry-run/
+
+# Docs
+rewardContract/docs/
+
+# Dotenv files (contains sensitive keys)
+.env
+rewardContract/.env
+frontend_paymaster/.env.local
